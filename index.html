@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brew &amp; Bloom — Good coffee. Slow mornings. Beautiful moments.</title>
+  <meta name="description" content="Brew & Bloom is a concept specialty café website: thoughtfully brewed coffee, fresh pastries and a little space to slow down.">
+  <meta name="theme-color" content="#241B17">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23241B17'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23F4EBDD'%3EB%26B%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Fraunces (headlines) + DM Sans (body). The site falls back to Georgia / system fonts if these can't load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ A. NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Brew &amp; Bloom, back to top">Brew <em>&amp;</em> Bloom</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+          <li class="nav__cta"><a class="btn btn--light btn--small" href="#menu">Explore Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ B. HERO ============ -->
+    <section class="hero theme-dark" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Specialty coffee &amp; bakery</p>
+          <h1 class="hero__title" id="hero-title">
+            <span>Good coffee.</span>
+            <span>Slow mornings.</span>
+            <span>Beautiful moments.</span>
+          </h1>
+          <p class="hero__lead">Discover thoughtfully brewed coffee, fresh pastries, and a little space to slow down.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light" href="#menu">Explore Our Menu</a>
+            <a class="btn btn--ghost" href="#story">Discover Our Story</a>
+          </div>
+        </div>
+        <figure class="hero__figure">
+          <div class="hero__frame">
+            <img class="hero__img" src="assets/hero.svg" width="1600" height="1000" fetchpriority="high" decoding="async"
+                 alt="Illustration of a café table by two arched windows, with a steaming cup of coffee and a croissant on a plate">
+          </div>
+          <figcaption class="hero__cap">Every Cup Tells a Story.</figcaption>
+        </figure>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <span>Espresso</span><span>Fresh pastries</span><span>Slow mornings</span><span>Cold brews</span><span>Good company</span>
+      </div>
+    </section>
+
+    <!-- ============ C. OUR STORY ============ -->
+    <section class="section theme-light story" id="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__text reveal">
+          <p class="eyebrow eyebrow--dark"><b>01</b> Our Story</p>
+          <h2 class="section-title" id="story-title">A neighbourhood café for <em>slower</em>, better moments.</h2>
+          <p class="lead">Brew &amp; Bloom is a welcoming little café built around three simple ideas: coffee that is thoughtfully prepared, pastries that are fresh, and a comfortable seat for as long as you'd like it.</p>
+          <p>Come in for a quick espresso before work, settle in with a book and a latte, or meet a friend over something sweet. There is no rush here. The idea is simply a good cup, a warm room and a moment that feels like yours.</p>
+
+          <ul class="values">
+            <li><h3>Thoughtfully brewed</h3><p>Every drink is made with care, from the first shot to the last pour.</p></li>
+            <li><h3>Fresh pastries</h3><p>Croissants, brownies and cakes to sit beside your coffee.</p></li>
+            <li><h3>Room to linger</h3><p>Soft light, plants and seating that invites you to stay.</p></li>
+          </ul>
+          <p class="story__sign">Every Cup Tells a Story.</p>
+        </div>
+
+        <div class="story__media reveal">
+          <img class="story__arch" src="assets/story-main.svg" width="800" height="1000" loading="lazy" decoding="async"
+               alt="Illustration of a sunlit café corner with an arched window, a plant and a small round table set with two cups">
+          <img class="story__inset" src="assets/story-small.svg" width="600" height="600" loading="lazy" decoding="async"
+               alt="Top-down illustration of a latte and a croissant on a dark table">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. OUR MENU ============ -->
+    <section class="section theme-dark menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><b>02</b> Our Menu</p>
+            <h2 class="section-title" id="menu-title">Something warm, something cold, <em>something sweet.</em></h2>
+          </div>
+          <p class="section-note">Sample menu and prices for this concept project.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter the menu by category" id="menu-filters"></div>
+        <p class="visually-hidden" id="menu-status" role="status" aria-live="polite"></p>
+
+        <div class="menu-grid" id="menu-grid"></div>
+        <noscript><p class="noscript-note">Please enable JavaScript to see the menu.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ E. BEST SELLERS ============ -->
+    <section class="section theme-light picks" id="picks" aria-labelledby="picks-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--dark"><b>03</b> Best Sellers</p>
+          <h2 class="section-title" id="picks-title">Three places to <em>start.</em></h2>
+        </div>
+        <ol class="picks__grid" id="picks-grid"></ol>
+      </div>
+    </section>
+
+    <!-- ============ F. GALLERY ============ -->
+    <section class="section theme-white gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--dark"><b>04</b> Gallery</p>
+            <h2 class="section-title" id="gallery-title">Light, steam &amp; <em>small details.</em></h2>
+          </div>
+          <p class="section-note">Select any picture to view it larger.</p>
+        </div>
+        <div class="gallery__rows" id="gallery-rows"></div>
+      </div>
+    </section>
+
+    <!-- ============ G. VISIT US ============ -->
+    <section class="section theme-brown visit" id="visit" aria-labelledby="visit-title">
+      <div class="container visit__grid">
+        <div class="visit__text reveal">
+          <p class="eyebrow"><b>05</b> Visit Us</p>
+          <h2 class="section-title" id="visit-title">Pull up a chair. <em>We saved you a seat.</em></h2>
+          <p class="lead">Drop in for a morning coffee, an afternoon treat or a long, quiet catch-up. We'd love to see you.</p>
+
+          <div class="visit__cols">
+            <div>
+              <h3 class="mini-title">Find us</h3>
+              <address class="address" id="visit-address"></address>
+              <p class="badge">Sample address — fictional, not a real location</p>
+            </div>
+            <div>
+              <h3 class="mini-title">Opening hours</h3>
+              <dl class="hours" id="visit-hours"></dl>
+              <p class="fineprint">Placeholder hours for the concept.</p>
+            </div>
+          </div>
+
+          <div id="directions-slot" class="directions"></div>
+        </div>
+
+        <div class="visit__media reveal">
+          <img src="assets/g-seating.svg" width="800" height="1000" loading="lazy" decoding="async"
+               alt="Illustration of an armchair and a small table with a cup of coffee beside a tall arched window">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ H. RESERVATION / CONTACT ============ -->
+    <section class="section theme-light reserve" id="reserve" aria-labelledby="reserve-title">
+      <div class="container reserve__grid">
+        <div class="reserve__text reveal">
+          <p class="eyebrow eyebrow--dark"><b>06</b> Reservations</p>
+          <h2 class="section-title" id="reserve-title">Save a table, <em>or just say hello.</em></h2>
+          <p class="lead">Tell us when you'd like to visit and how many of you are coming. Add a note if there's anything we should know.</p>
+          <p class="demo-note"><strong>Demo form.</strong> This is a portfolio concept, so nothing you enter is sent or stored anywhere, and no table is actually booked.</p>
+        </div>
+
+        <div class="reserve__panel reveal">
+          <form id="reserve-form" novalidate aria-describedby="form-status">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+                <p class="field__error" id="name-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <p class="field__error" id="email-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="date">Preferred date <span aria-hidden="true">*</span></label>
+                <input id="date" name="date" type="date" required aria-describedby="date-error">
+                <p class="field__error" id="date-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="time">Preferred time <span aria-hidden="true">*</span></label>
+                <select id="time" name="time" required aria-describedby="time-error"></select>
+                <p class="field__error" id="time-error" hidden></p>
+              </div>
+              <div class="field field--full">
+                <label for="guests">Number of guests <span aria-hidden="true">*</span></label>
+                <select id="guests" name="guests" required aria-describedby="guests-error"></select>
+                <p class="field__error" id="guests-error" hidden></p>
+              </div>
+              <div class="field field--full">
+                <label for="message">Message <span class="optional">(optional)</span></label>
+                <textarea id="message" name="message" rows="4" maxlength="500" aria-describedby="message-help"></textarea>
+                <p class="field__help" id="message-help">Allergies, a celebration, a quiet corner? Up to 500 characters.</p>
+              </div>
+            </div>
+
+            <p class="form-required"><span aria-hidden="true">*</span> Required fields</p>
+            <button class="btn btn--dark" type="submit" id="submit-btn">Request a Table</button>
+          </form>
+
+          <div class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ I. FOOTER ============ -->
+  <footer class="site-footer theme-dark">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="wordmark wordmark--big">Brew <em>&amp;</em> Bloom</p>
+        <p class="footer__tagline">Every Cup Tells a Story.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <h2 class="mini-title">Explore</h2>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+          <li><a href="#reserve">Reservations</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="mini-title">Contact</h2>
+        <ul class="footer__links" id="footer-contact"></ul>
+        <p class="fineprint">Sample contact details</p>
+      </div>
+
+      <div>
+        <h2 class="mini-title">Follow</h2>
+        <ul class="footer__links" id="footer-social"></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Brew &amp; Bloom. A fictional concept café, created as a website design portfolio project.</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Gallery lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <figure>
+      <img id="lightbox-img" alt="" width="800" height="800">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <div class="lightbox__controls">
+      <button type="button" class="lb-btn" id="lb-prev" aria-label="Previous picture">←</button>
+      <button type="button" class="lb-btn" id="lb-next" aria-label="Next picture">→</button>
+      <button type="button" class="lb-btn lb-btn--close" id="lb-close" aria-label="Close viewer">✕</button>
+    </div>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
