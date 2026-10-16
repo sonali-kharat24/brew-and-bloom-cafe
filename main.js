@@ -69,7 +69,7 @@
 
   function menuItem(item) {
     return el('li', { class: 'menu-item' },
-      el('img', { class: 'menu-item__img', src: 'assets/' + item.image, alt: item.alt, width: 96, height: 96, loading: 'lazy', decoding: 'async' }),
+      el('img', { class: 'menu-item__img', src: item.image, alt: item.alt, width: 96, height: 96, loading: 'lazy', decoding: 'async' }),
       el('div', {},
         el('div', { class: 'menu-item__top' },
           el('h3', { class: 'menu-item__name', text: item.name }),
@@ -113,7 +113,7 @@
   $('#picks-grid').append(...picks.map((p) =>
     el('li', { class: 'pick reveal' },
       el('div', { class: 'pick__media' },
-        el('img', { src: 'assets/' + p.image, alt: p.alt, width: 800, height: 1000, loading: 'lazy', decoding: 'async' }),
+        el('img', { src: p.image, alt: p.alt, width: 800, height: 1000, loading: 'lazy', decoding: 'async' }),
         el('span', { class: 'pick__tag', text: p.tag })),
       el('div', { class: 'pick__body' },
         el('span', { class: 'pick__num', 'aria-hidden': 'true' }),
@@ -130,13 +130,13 @@
 
   rows.append(...gallery.map((g, i) =>
     el('button', { type: 'button', class: `tile tile--${g.size} reveal`, 'data-index': i, 'aria-label': `View larger: ${g.caption}` },
-      el('img', { src: 'assets/' + g.image, alt: g.alt, loading: 'lazy', decoding: 'async' }),
+      el('img', { src: g.image, alt: g.alt, loading: 'lazy', decoding: 'async' }),
       el('span', { class: 'tile__cap', 'aria-hidden': 'true', text: g.caption }))));
 
   function showPhoto(i) {
     lbIndex = (i + gallery.length) % gallery.length;
     const g = gallery[lbIndex];
-    lbImg.src = 'assets/' + g.image;
+    lbImg.src = g.image;
     lbImg.alt = g.alt;
     lbCap.textContent = g.caption;
   }
